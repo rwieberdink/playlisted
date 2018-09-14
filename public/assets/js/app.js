@@ -32,7 +32,7 @@ $(document).ready(function() {
 				success: function(data){
 					if(data.length === 0) {
 						console.log("NO DATA");
-						alert("Whoops! Looks like there's no music for this selection.");
+						console.log("Whoops! Looks like there's no music for this selection.");
 					}
 
 					data=$(data).find("[data-mood='" + moodInput + "'][data-energy='" + energyInput + "']");
